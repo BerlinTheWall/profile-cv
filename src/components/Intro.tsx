@@ -45,11 +45,13 @@ const Intro: React.FC = () => {
           className={`w-1/2 flex flex-col px-5 justify-center xs:w-full xs:mt-5`}
         >
           <div className="flex flex-col text-left xs:gap-3">
-            <h1 className="text-5xl">Web Developer</h1>
-            <h2 className="text-6xl font-semibold">Hooman Shahidi</h2>
+            <h1 className="xs:text-4xl sm:text-5xl">Web Developer</h1>
+            <h2 className="xs:text-5xl sm:text-6xl font-semibold">
+              Hooman Shahidi
+            </h2>
           </div>
-          <div className="mt-5 text-xl">
-            <p className=" text-justify">
+          <div className="mt-5 text-2xl">
+            <p className="text-justify">
               Passionate and motivated web developer seeking better
               opportunities. I have worked for about a year as a front-end
               developer at FG company. I am studying computer engineering at

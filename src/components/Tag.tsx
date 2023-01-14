@@ -18,8 +18,8 @@ interface Props {
 const Tag: React.FC<Props> = ({ title, text, className }) => {
   return (
     <div className={`flex flex-col text-left gap-3 ${className}`}>
-      <div className="text-4xl">{title}</div>
-      <div className="text-4xl font-bold">{text}</div>
+      <div className="text-4xl font-semibold">{title}</div>
+      <div className="text-4xl font-bold italic">{text}</div>
     </div>
   );
 };

@@ -8,7 +8,7 @@ const AboutMe: React.FC = () => {
   return (
     <>
       <Element id="ABOUT ME" name="ABOUT ME">
-        <div className="w-full ml-auto mr-auto sm:container xs:px-5 sm:px-10 py-5 pt-20 bg-teal-600">
+        <div className="w-full ml-auto mr-auto sm:container xs:px-5 sm:px-10 py-5 pt-20 bg-teal-600 bg-green-brown3">
           <div className="text-left">
             <h1 className="text-7xl font-semibold">About Me</h1>
           </div>

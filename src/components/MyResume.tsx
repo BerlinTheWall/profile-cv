@@ -20,7 +20,7 @@ const skills = [
 const MyResume: React.FC = () => {
   return (
     <Element id="MY RESUME" name="MY RESUME">
-      <div className="w-full ml-auto mr-auto sm:container xs:px-5 sm:px-10 py-5 pt-20 bg-slate-400">
+      <div className="w-full ml-auto mr-auto sm:container xs:px-5 sm:px-10 py-5 pt-20 bg-slate-300 ">
         <div className="text-left">
           <h1 className="text-7xl font-semibold">My Resume</h1>
         </div>
