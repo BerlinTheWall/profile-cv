@@ -1,6 +1,5 @@
 import './App.css';
 import React from 'react';
-// eslint-disable-next-line @typescript-eslint/no-unused-vars
 import { AboutMe, Intro, MyProject, MyResume, Navbar } from './components';
 import { transitions, positions, Provider as AlertProvider } from 'react-alert';
 import AlertTemplate from 'react-alert-template-basic';

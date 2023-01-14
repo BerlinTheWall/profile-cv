@@ -1,4 +1,3 @@
-/* eslint-disable @typescript-eslint/no-unused-vars */
 import * as React from 'react';
 import { ScreenClasses } from '../types/ScreenClasses';
 import useScreenClasses from '../utils/hooks/useScreenClasses';
@@ -10,7 +9,7 @@ import LinkedInIcon from '../assets/images/icon/linkedin.svg';
 import GithubIcon from '../assets/images/icon/github.svg';
 import TelegramIcon from '../assets/images/icon/telegram.svg';
 import EmailIcon from '../assets/images/icon/envelope.svg';
-import { Alert, Snackbar } from '@mui/material';
+import { Alert, Snackbar, Tooltip } from '@mui/material';
 
 const IntroSize: ScreenClasses = {
   lg: '',
@@ -62,18 +61,21 @@ const Intro: React.FC = () => {
             <IconTag
               href="https://linkedin.com/in/hooman-shahidi-5927b4103"
               title="Linked In"
+              className="hover:scale-110 ease-in-out duration-200"
               icon={LinkedInIcon}
               text={'2'}
             ></IconTag>
             <IconTag
               href="https://github.com/BerlinTheWall"
               title="Github"
+              className="hover:scale-110 ease-in-out duration-200"
               icon={GithubIcon}
               text={'2'}
             ></IconTag>
             <IconTag
               href="https://t.me/TheWhoman"
               title="Telegram"
+              className="hover:scale-110 ease-in-out duration-200"
               icon={TelegramIcon}
               text={'2'}
             ></IconTag>
@@ -91,12 +93,17 @@ const Intro: React.FC = () => {
                 Email address is copied to clipboard.
               </Alert>
             </Snackbar>
-            <IconTag
-              onClick={handleClick}
-              title="Email"
-              icon={EmailIcon}
-              text={'2'}
-            ></IconTag>
+            <Tooltip title="Copy Email Address" arrow>
+              <div>
+                <IconTag
+                  onClick={handleClick}
+                  title="Email"
+                  className="hover:scale-110 ease-in-out duration-200"
+                  icon={EmailIcon}
+                  text={'2'}
+                ></IconTag>
+              </div>
+            </Tooltip>
           </div>
         </div>
         <div className="w-1/2 px-5 xs:w-full">

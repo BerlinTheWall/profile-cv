@@ -1,20 +1,8 @@
-/* eslint-disable @typescript-eslint/no-unused-vars */
 import * as React from 'react';
-import { ScreenClasses } from '../types/ScreenClasses';
-import useScreenClasses from '../utils/hooks/useScreenClasses';
-import IconTag from './IconTag';
 import ProgressBar from '@ramonak/react-progress-bar';
 import Button from '@mui/material/Button';
 import Download from '@mui/icons-material/Download';
 import { Element } from 'react-scroll';
-// import ResumeFile from '../assets/docs/resume.pdf';
-// import ResumeFile from '/resume.pdf';
-
-const IntroSize: ScreenClasses = {
-  lg: 'w-1/4 max-w-min mr-52 mt-36',
-  sm: 'w-1/2 max-w-min mr-10 mt-36',
-  xs: 'w-full mr-5 ml-5 mt-44',
-};
 
 const skills = [
   { name: 'Javascript', rate: 90 },

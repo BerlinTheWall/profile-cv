@@ -1,12 +1,4 @@
-/* eslint-disable jsx-a11y/alt-text */
-/* eslint-disable @typescript-eslint/no-unused-vars */
 import * as React from 'react';
-import { ScreenClasses } from '../types/ScreenClasses';
-import useScreenClasses from '../utils/hooks/useScreenClasses';
-import IconTag from './IconTag';
-import ProgressBar from '@ramonak/react-progress-bar';
-import Button from '@mui/material/Button';
-import Download from '@mui/icons-material/Download';
 import { Element } from 'react-scroll';
 import fgLoginPage from '../assets/images/project/fg-loginPage.png';
 import fgMainPage from '../assets/images/project/fg-mainPage.png';
@@ -17,16 +9,8 @@ import fgMainMobile from '../assets/images/project/fg-mainPageMobile.png';
 import fgDetailsMobile from '../assets/images/project/fg-detailsMobile.png';
 import fgTableMobile from '../assets/images/project/fg-tableMobile.png';
 
-// eslint-disable-next-line @typescript-eslint/ban-ts-comment
-// @ts-ignore
 import { SlideshowLightbox } from 'lightbox.js-react';
 import 'lightbox.js-react/dist/index.css';
-
-const IntroSize: ScreenClasses = {
-  lg: 'w-1/4 max-w-min mr-52 mt-36',
-  sm: 'w-1/2 max-w-min mr-10 mt-36',
-  xs: 'w-full mr-5 ml-5 mt-44',
-};
 
 const MyProject: React.FC = () => {
   return (
@@ -40,14 +24,26 @@ const MyProject: React.FC = () => {
             <h1 className="text-5xl font-semibold">FG Iran project</h1>
           </div>
           <SlideshowLightbox className="grid xs:grid-col-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 mx-auto">
-            <img className="w-full rounded-lg" src={fgLoginPage} />
-            <img className="w-full rounded-lg h-96" src={fgMainPage} />
-            <img className="w-full rounded-lg h-96" src={fgProgramModal} />
-            <img className="w-full rounded-lg" src={fgProgramPage} />
-            <img className="w-full rounded-lg" src={fgLicensePage} />
-            <img className="w-full rounded-lg" src={fgMainMobile} />
-            <img className="w-full rounded-lg" src={fgDetailsMobile} />
-            <img className="w-full rounded-lg" src={fgTableMobile} />
+            <img className="w-full rounded-lg" src={fgLoginPage} alt="FG 1" />
+            <img
+              className="w-full rounded-lg h-96"
+              src={fgMainPage}
+              alt="FG 2"
+            />
+            <img
+              className="w-full rounded-lg h-96"
+              src={fgProgramModal}
+              alt="FG 3"
+            />
+            <img className="w-full rounded-lg" src={fgProgramPage} alt="FG 4" />
+            <img className="w-full rounded-lg" src={fgLicensePage} alt="FG 5" />
+            <img className="w-full rounded-lg" src={fgMainMobile} alt="FG 6" />
+            <img
+              className="w-full rounded-lg"
+              src={fgDetailsMobile}
+              alt="FG 7"
+            />
+            <img className="w-full rounded-lg" src={fgTableMobile} alt="FG 8" />
           </SlideshowLightbox>
         </div>
       </div>

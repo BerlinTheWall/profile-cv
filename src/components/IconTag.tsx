@@ -25,7 +25,7 @@ const IconTag: React.FC<Props> = ({
       target="_blank"
       onClick={onClick}
       className={`flex flex-col items-center text-left gap-1 cursor-pointer ${className} ${
-        disabled ? 'cursor-default pointer-events-none' : ''
+        disabled ? 'cursor-default pointer-events-none' : 'hover:font-semibold'
       }`}
       rel="noreferrer"
     >

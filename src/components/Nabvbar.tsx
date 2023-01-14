@@ -1,4 +1,3 @@
-/* eslint-disable @typescript-eslint/no-unused-vars */
 import * as React from 'react';
 import AppBar from '@mui/material/AppBar';
 import Box from '@mui/material/Box';
@@ -8,12 +7,8 @@ import Typography from '@mui/material/Typography';
 import Menu from '@mui/material/Menu';
 import MenuIcon from '@mui/icons-material/Menu';
 import Container from '@mui/material/Container';
-import Avatar from '@mui/material/Avatar';
 import Button from '@mui/material/Button';
-import Tooltip from '@mui/material/Tooltip';
 import MenuItem from '@mui/material/MenuItem';
-import { ScreenClasses } from '../types/ScreenClasses';
-import useScreenClasses from '../utils/hooks/useScreenClasses';
 import myProfile from '../assets/images/profile/my-profile.jpeg';
 import { Link } from 'react-scroll';
 
@@ -21,9 +16,6 @@ const pages = ['ABOUT ME', 'MY RESUME', 'MY PROJECTS'];
 
 const HomePageHeader: React.FC = () => {
   const [anchorElNav, setAnchorElNav] = React.useState<null | HTMLElement>(
-    null,
-  );
-  const [anchorElUser, setAnchorElUser] = React.useState<null | HTMLElement>(
     null,
   );
 
@@ -143,9 +135,10 @@ const HomePageHeader: React.FC = () => {
                     key={page}
                     onClick={handleCloseNavMenu}
                     sx={{ my: 2, color: 'white', display: 'block' }}
+                    className="hover:font-semibold"
                   >
                     {page}
-                  </Button>{' '}
+                  </Button>
                 </Link>
               ))}
             </Box>

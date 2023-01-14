@@ -1,8 +1,5 @@
-/* eslint-disable @typescript-eslint/no-unused-vars */
 import * as React from 'react';
 import ScrollAnimationItem from '../ScrollAnimationItem';
-import { ScreenClasses } from '../types/ScreenClasses';
-import useScreenClasses from '../utils/hooks/useScreenClasses';
 import IconTag from './IconTag';
 import { Element } from 'react-scroll';
 import CheckIcon from '../assets/images/icon/check-circle-fill.svg';
